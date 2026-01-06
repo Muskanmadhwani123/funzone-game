@@ -1,4 +1,3 @@
 print("FunZone Game App Started")
 print("Hello")
-print("Hello")
-print("Hi")
+print("new line added")
