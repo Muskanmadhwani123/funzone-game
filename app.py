@@ -1,6 +1,13 @@
-print("FunZone Game App Started")
-print("Hello")
-print("new line added")
-print("this is my new line")
-print(123)
-print(456)
+from flask import Flask,render_template
+app=Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("welcome.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+if __name__== "__main__":
+    app.run(debug=True)
